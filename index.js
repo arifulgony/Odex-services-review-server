@@ -32,7 +32,6 @@ function verifyJWT(req, res, next){
     })
 }
 
-
 async function run() {
     try {
         const serviceCollection = client.db('servicesReview').collection('services');
@@ -139,6 +138,7 @@ app.listen(port, () => {
     console.log(`Services Review server running on ${port}`);
 })
 
+//end
 
 
 
