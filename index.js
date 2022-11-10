@@ -64,7 +64,6 @@ async function run() {
             res.send(service);
         });
       
-        // reviews api
         app.get('/reviews',verifyJWT, async (req, res) => {
             const decoded = req.decoded;
             if(decoded.email !== req.query.email){
